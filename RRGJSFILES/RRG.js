@@ -4,8 +4,6 @@ const fistForm = document.getElementById("form1");
 const secondForm = document.getElementById("form2");
 const container = document.querySelector(".container");
 
-console.log(signInBtn)
-
 signInBtn.addEventListener("click", () => {
 	container.classList.remove("right-panel-active");
 });
