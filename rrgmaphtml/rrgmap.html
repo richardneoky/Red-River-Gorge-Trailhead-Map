@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <!-- MapBox code-->
+<!--liks for css and script-->
 <head>
   <meta charset="utf-8">
   <title>Display a popup on click</title>
@@ -9,7 +10,14 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
   <link href="../rrgmapcss/rrgmap.css" rel="stylesheet">
+
+  <link href="../CSS small/rrgmapcss" rel="stylesheet">
+  <link href="../CSS medium/rrgmapcss" rel="stylesheet">
+  <link href="../CSS LArge/rrgmapcss" rel="stylesheet">
+
   <style>
+<html>
+
     body {
       margin: 0;
       padding: 0;
@@ -23,6 +31,7 @@
       width: 100%;
     }
   </style>
+
 </head>
 
 <body>
@@ -39,7 +48,7 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [-83.6667, 37.8167],
-      zoom: 12.15
+      zoom: 11.15
     });
     map.on('load', () => {
       map.addSource('places', {
@@ -217,7 +226,7 @@
 
 <!-- Not Mapbox-->
 
-
+<!--LOGO-->
 
 <main id="main-doc">
   <section class="main-section" id="Introduction">
@@ -228,45 +237,32 @@
 
 
 
+<!--Dropdown List-->
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">TRAIL LIST</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="#">TRAIL LIST<div id="down-triangle"></div></a>
+            <ul>
+              <li><a href="#">Copperas Falls<div class="circle"></div></a></li>
+              <li><a href="#">Auxier Ridge<div class="circle"></div></a></li>
+              <li><a href="#">Indian Staircase<div class="circle"></div></a></li>
+              <li><a href="#">Cloud Splitter<div class="circle"></div></a></li>
+              <li><a href="#">Natural Bridge<div class="circle"></div></a></li>
+              <li><a href="#">Rock Bridge<div class="circle"></div></a></li>
+              <li><a href="#">Grays Arch<div class="circle"></div></a></li>
+              <li><a href="#">Chimney Top Trail<div class="circle"></div></a></li>
+              <li><a href="#">Sheltowee Trace RRG<div class="circle"></div></a></li>
+
+            </ul>
+          </li>
+        </ul>
       </nav>
       
-
-
-      
-
     </header>
    
 
       <body>
         
-      
-      
-      
-      
-      
-      
       </body>
       
 
