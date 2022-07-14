@@ -10,38 +10,29 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
   <link href="../rrgmapcss/rrgmap.css" rel="stylesheet">
-
-  <link href="../CSS small/rrgmapcss" rel="stylesheet">
-  <link href="../CSS medium/rrgmapcss" rel="stylesheet">
-  <link href="../CSS LArge/rrgmapcss" rel="stylesheet">
-
-  <style>
-<html>
-
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    
-
-    #map {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
-
 </head>
-
 <body>
-  <style>
-    .mapboxgl-popup {
-      max-width: 400px;
-      font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    }
-  </style>
   <div id="map"></div>
+  <img class="logo" src="https://lh3.googleusercontent.com/LXuCZ_Khfgj8JmvF0NGdSDanOEo6gx1BpMdgT_wpeBm_s2ZEO7LwrcnFOsjnxo-GBAsVQgH2uFUhoxxCg01lcBKLj9IRjc2qJxE6Hk4t0gwU27dxu-_kVVgFN5IxP4tPmuLKA5sHgQ=s250-p-k"/>
+  <div class="navbar1">
+    <nav>
+        <ul>
+        <li><a href="#">TRAIL LIST<div id="down-triangle"></div></a>
+            <ul>
+            <li><a href="#">Copperas Falls<div class="circle"></div></a></li>
+            <li><a href="#">Auxier Ridge<div class="circle"></div></a></li>
+            <li><a href="#">Indian Staircase<div class="circle"></div></a></li>
+            <li><a href="#">Cloud Splitter<div class="circle"></div></a></li>
+            <li><a href="#">Natural Bridge<div class="circle"></div></a></li>
+            <li><a href="#">Rock Bridge<div class="circle"></div></a></li>
+            <li><a href="#">Grays Arch<div class="circle"></div></a></li>
+            <li><a href="#">Chimney Top Trail<div class="circle"></div></a></li>
+            <li><a href="#">Sheltowee Trace RRG<div class="circle"></div></a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+</div>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoicmlubWFuODciLCJhIjoiY2s5ZDRrOXNmMDN6djNmcDd0eHVhcXNnMSJ9.lSA6fQZIptHf4g5lmD6SMA';
     const map = new mapboxgl.Map({
@@ -60,17 +51,11 @@
                 'type': 'FeatureCollection',
                 'features': [
                     {
-
               'type': 'Feature',
               'properties': {
                 'description': '<strong>Copperas Falls</strong><p><a href="https://www.alltrails.com/explore/trail/us/kentucky/copperas-falls" target="_blank" title="Opens in a new window"> Explore on All Trails</a>, </p>',
-                
                 'icon': 'campsite-15'
               },
-        
-        
-        
-
               'geometry': {
                 'type': 'Point',
                 'coordinates': [-83.57166, 37.84107]
@@ -80,7 +65,6 @@
               'type': 'Feature',
               'properties': {
                 'description': '<strong>Auxier Ridge</strong><p><a href="https://www.alltrails.com/explore/trail/us/kentucky/auxier-ridge-trail-to-courthouse-rock" target="_blank" title="Opens in a new window"> Explore on All Trails</a>, </p>',
-                
                 'icon': 'campsite-15'
               },
               'geometry': {
@@ -164,18 +148,10 @@
                 'type': 'Point',
                 'coordinates': [-83.62808, 37.82303]
               }
-              
-            
                     }
-                                                                                                                    
                   ]
         }
-      });  
-              
-              
-              
-              
-    
+      });
       // Add a layer showing the places.
       map.addLayer({
         'id': 'places',
@@ -213,59 +189,6 @@
       });
     });
   </script>
-
+<img class="logo" src="https://lh3.googleusercontent.com/LXuCZ_Khfgj8JmvF0NGdSDanOEo6gx1BpMdgT_wpeBm_s2ZEO7LwrcnFOsjnxo-GBAsVQgH2uFUhoxxCg01lcBKLj9IRjc2qJxE6Hk4t0gwU27dxu-_kVVgFN5IxP4tPmuLKA5sHgQ=s250-p-k"/>
 </body>
-
 </html>
-
-
-
-
-
-
-
-<!-- Not Mapbox-->
-
-<!--LOGO-->
-
-<main id="main-doc">
-  <section class="main-section" id="Introduction">
-
-    <header>
-
-      <img src="https://lh3.googleusercontent.com/LXuCZ_Khfgj8JmvF0NGdSDanOEo6gx1BpMdgT_wpeBm_s2ZEO7LwrcnFOsjnxo-GBAsVQgH2uFUhoxxCg01lcBKLj9IRjc2qJxE6Hk4t0gwU27dxu-_kVVgFN5IxP4tPmuLKA5sHgQ=s250-p-k" /> 
-
-
-
-<!--Dropdown List-->
-
-      <nav>
-        <ul>
-          <li><a href="#">TRAIL LIST<div id="down-triangle"></div></a>
-            <ul>
-              <li><a href="#">Copperas Falls<div class="circle"></div></a></li>
-              <li><a href="#">Auxier Ridge<div class="circle"></div></a></li>
-              <li><a href="#">Indian Staircase<div class="circle"></div></a></li>
-              <li><a href="#">Cloud Splitter<div class="circle"></div></a></li>
-              <li><a href="#">Natural Bridge<div class="circle"></div></a></li>
-              <li><a href="#">Rock Bridge<div class="circle"></div></a></li>
-              <li><a href="#">Grays Arch<div class="circle"></div></a></li>
-              <li><a href="#">Chimney Top Trail<div class="circle"></div></a></li>
-              <li><a href="#">Sheltowee Trace RRG<div class="circle"></div></a></li>
-
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      
-    </header>
-   
-
-      <body>
-        
-      </body>
-      
-
-
-
-      

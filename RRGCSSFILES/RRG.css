@@ -211,3 +211,40 @@ body {
 	}
 }
 
+
+@media only screen and (max-width: 600px) {
+	body{
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	.container__form container--signin{
+	  flex:10%;
+	}
+	img {
+		flex:10%;
+	  }
+	  /*.btn{
+		flex:10%;
+	  }*/
+	  .container right-panel-active {
+		  flex:10%;
+	  }
+	  .container__form container--signup{
+		  flex:10%;
+	  }
+	  .container__form container--signin{
+		flex:10%;
+	  }
+	  .container__overlay {
+		flex:10%;
+	  }
+	  .overlay {
+		flex:10%;
+	  }
+	  .overlay__panel {
+		flex:10%;
+	  }
+	  /*#signIn {
+		  flex:10%;
+	  }*/
+   }

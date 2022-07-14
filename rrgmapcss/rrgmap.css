@@ -5,101 +5,120 @@
   position: absolute;
   
 }
+/*From HTML*/
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 
 
 
 /*NAV BAR*/
 body {
-	background: #f2f2f2;
-	font-size: 1.75em;
-	font-family: 'Raleway', sans-serif;
+    background: #f2f2f2;
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 128, 0, 0.4);
 }
 
 nav {
-	margin: 100px auto; 
-	text-align: center;
+    margin: 100px auto; 
+    text-align: center;
   
 }
 
-nav ul {
-	margin-left: 0;
-	padding-left: 0;
-	width: 500px;
-	list-style: none;
-	position: fixed;
-	display: inline-table;
+/* nav ul {
+    margin-left: 0;
+    padding-left: 0;
+    width: 500px;
+    list-style: none;
+    position: fixed;
+    display: inline-table;
   left: 45%;
   top: 1%;
   bottom: auto;
   right: auto;
 }
-
+ */
 nav ul ul {
-	display: none;
+    display: none;
 }
 
 nav ul li:hover > ul {
-	display: block;
+    display: block;
 }
 
-nav ul li {
-	float: right;
-	width: 300px;
-	text-align: left;
-	border-bottom: 3px solid #01672b; 
+/* nav ul li {
+    float: right;
+    width: 300px;
+    text-align: left;
+    border-bottom: 3px solid #01672b; 
   
-}
-	
+} */
+    
 nav ul li:hover {
-	background: #f2f2f2;
+    background: #ffffff2f;
 }
 
 nav ul li a {
-	display: block; 
-	padding: 15px 10px;
-	color: #2a2a2a; 
-	text-decoration: none;
+    display: block; 
+    padding: 15px 10px;
+    color: #2a2a2a; 
+    text-decoration: none;
 }
-					
-nav ul ul {
-	border-radius: 0px; 
-	padding: 0;
-	position: absolute; 
-	top: 100%;
+                    
+/* nav ul ul {
+    border-radius: 0px; 
+    padding: 0;
+    position: absolute; 
+    top: 100%;
 }
 
 nav ul ul li {
-	float: none;
-	border-bottom: 2px solid #eaeaea; 
-	position: relative;
-}
+    float: none;
+    border-bottom: 2px solid #eaeaea; 
+    position: relative;
+} */
 
 nav ul ul li a {
-	padding: 15px 10px;
-	color: #838383;
+    padding: 15px 10px;
+    color: #2e2d2d;
 }	
 
 nav ul ul li a:hover {
-	background: #01672b;
-	color: #fff;
+    background: #01672c8b;
+    color: rgb(255, 255, 255);
 }	
 
 #down-triangle {
-	float: right;
-	width: 0; 
- 	height: 0;
- 	margin-top: 10px;
- 	border-top: 10px solid #2ecc71;
+    float: right;
+    width: 0; 
+     height: 0;
+     margin-top: 10px;
+     border-top: 10px solid #2ecc71;
   border-left: 10px solid transparent; 
   border-right: 10px solid transparent; 
 }
 
 .circle {
-	float: right;
-	display: inline;
-	width: 10px;
- 	height: 10px; 
- 	margin-top: 5px;
+    float: right;
+    display: inline;
+    width: 10px;
+     height: 10px; 
+     margin-top: 5px;
   border: 3px solid #2ecc71;
   -moz-border-radius: 100%; 
   -webkit-border-radius: 100%; 
@@ -107,42 +126,50 @@ nav ul ul li a:hover {
 }
 
 
-/*NAV BAR TRAIL LIST END*/
 
-/*Mapbox image css*/
-
-
-
-/*Mapbox image css end*/
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-/*experimental mapbox function design*/
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 600px) {
+  img {
+      position: absolute;
+      left: 0px;
+      top:0px;
+      width: 100px;
+      max-width: 50%;
+      height: auto;
+      opacity: 100%;
+    }
+    li{
+      list-style: none;
+    }
+    .navbar1{
+      display: inline-block;
+      white-space: nowrap;
+      position: absolute;
+      left: 0px;
+      bottom: -80px;
+      font-size: .75em;
+      /* background-color: red; */
+    }
+}
+@media only screen and (min-width: 601px) {
+  img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      max-width: 10%;
+      height: auto;
+      opacity: 80%;
+    }
+    li{
+      list-style: none;
+    }
+    .navbar1{
+      display: inline-block;
+      white-space: nowrap;
+      position: absolute;
+      right: 10px;
+      top: -80px;
+      /* background-color: red; */
+    }
+}
 
 
