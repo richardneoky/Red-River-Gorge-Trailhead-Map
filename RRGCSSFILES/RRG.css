@@ -17,7 +17,18 @@
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.logoButton {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin: 0 auto 1rem auto;
+
+}
+
+
 body {
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	background-color: var(--white);
 	background: url(https://lh3.googleusercontent.com/NMU6GQEJjwBlFvnS9GGnUBLxqjFgEh9hfzpQOX2z1VpqV-QMPVE--3ntTtqkFoVvQ7A3kMwR0POmFFQ1kQpL6JnXRXDO5Xxwt4fkmOaySWiyw3VorTJnGaMYQAaXUcs1KOeSflFAGQ=w2400);
@@ -25,7 +36,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: grid;
+	
 	height: 100vh;
 	place-items: center;
 }
@@ -164,6 +175,8 @@ body {
 	padding: 0.9rem 4rem;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+	text-align: center;
+	align-self: center;
 }
 
 .form > .btn {
@@ -211,40 +224,42 @@ body {
 	}
 }
 
+.container__form container--signin{
+	flex:10%;
+  }
 
-@media only screen and (max-width: 600px) {
+  img {
+	flex:10%;
+  }
+
+  .container right-panel-active {
+	flex:10%;
+}
+.container__form container--signup{
+	flex:10%;
+}
+
+.container__form container--signin{
+	flex:10%;
+  }
+
+@media only screen and (min-width: 600px)
+{
 	body{
-	  display: flex;
-	  flex-wrap: wrap;
+		display: grid;
 	}
-	.container__form container--signin{
-	  flex:10%;
-	}
-	img {
-		flex:10%;
-	  }
-	  /*.btn{
-		flex:10%;
-	  }*/
-	  .container right-panel-active {
-		  flex:10%;
-	  }
-	  .container__form container--signup{
-		  flex:10%;
-	  }
-	  .container__form container--signin{
-		flex:10%;
-	  }
-	  .container__overlay {
-		flex:10%;
-	  }
-	  .overlay {
-		flex:10%;
-	  }
-	  .overlay__panel {
-		flex:10%;
-	  }
-	  /*#signIn {
-		  flex:10%;
-	  }*/
-   }
+}
+
+@media only screen and (min-width: 1024px){
+.logoButton {
+	flex-direction: row;
+
+}
+.btn{
+	margin-left: 2rem;
+}
+.logo{
+	margin-right: 2rem;
+}
+}
+

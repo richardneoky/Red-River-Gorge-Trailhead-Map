@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../RRGCSSFILES/RRG.css" rel="stylesheet">
- 
-  <img  src="https://lh3.googleusercontent.com/LXuCZ_Khfgj8JmvF0NGdSDanOEo6gx1BpMdgT_wpeBm_s2ZEO7LwrcnFOsjnxo-GBAsVQgH2uFUhoxxCg01lcBKLj9IRjc2qJxE6Hk4t0gwU27dxu-_kVVgFN5IxP4tPmuLKA5sHgQ=s250-p-k" /> 
 
-
-<a class="btn" href="http://127.0.0.1:5500/rrgmaphtml/rrgmap.html">Go TO MAP</a>
 
 
 	
@@ -20,16 +16,13 @@
 </head>
 
 
-
-
-
-
-
-
-
-
 <body>
-    
+	<div class="logoButton">
+    <img class="logo" src="https://lh3.googleusercontent.com/LXuCZ_Khfgj8JmvF0NGdSDanOEo6gx1BpMdgT_wpeBm_s2ZEO7LwrcnFOsjnxo-GBAsVQgH2uFUhoxxCg01lcBKLj9IRjc2qJxE6Hk4t0gwU27dxu-_kVVgFN5IxP4tPmuLKA5sHgQ=s250-p-k" /> 
+
+<a class="btn" href="../rrgmaphtml/rrgmap.html">Go TO MAP</a>
+</div>
+
       <!--image #1>
 
 
@@ -49,10 +42,10 @@
 	
 	<!-- Sign In -->
 	<div class="container__form container--signin">
-		<form action="#" class="form" id="form2">
+		<form action="#" class="form" id="form2" onsubmit="signIn()" >
 			<h2 class="form__title">Sign In</h2>
-			<input type="email" placeholder="Email" class="input" />
-			<input type="password" placeholder="Password" class="input" />
+			<input type="email" placeholder="Email" class="input" id="email" />
+			<input type="password" placeholder="Password" class="input" id="password" />
 			<a href="#" class="link">Forgot your password?</a>
 			<button class="btn">Sign In</button>
 		</form>
