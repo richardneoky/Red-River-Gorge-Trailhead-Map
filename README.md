@@ -5,6 +5,8 @@
 #### How to start. Go to the RRG files to open the landing page where you can sign up and go to the map. You can access the map by also using the rrgmap files. Once the map is pulled up, enjoy ecploring the list of trails and the icons located at geographical points of interest. You can follow the icon links to the website ALlTrails. 
 
 #### Project requirements. 
+### CSS and JS functions that I implemented 
+
 ##### You must include a minimum of 2 media queries that create a better layout/user experience The two media queries must be designed with “mobile first” principles in mind
  ##### This means mobile phones should be the base for the css. 
 ##### Then use a tablet media query to make changes for that experience. 
