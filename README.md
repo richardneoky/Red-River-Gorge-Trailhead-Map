@@ -7,16 +7,24 @@
 #### Project requirements. 
 ### CSS and JS functions that I implemented 
 
-##### You must include a minimum of 2 media queries that create a better layout/user experience The two media queries must be designed with “mobile first” principles in mind
- ##### This means mobile phones should be the base for the css. 
-##### Then use a tablet media query to make changes for that experience. 
-##### And Then a Desktop media query to make changes for the desktop experience. 
-##### We should be able to see your site change layout as we make your site larger or smaller.
+### Sign up/Landing page
+##### On the sign up landing page, I used media queries to start with a mobile first design. 
 
-##### Project is uploaded to your GitHub repository and shows at minimum 5 separate commits
-##### Project includes a README file that explains the following:
-##### Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views. Simply applying a basic flex property so that text wraps as you change screen sizes does not count. You must actually rearrange content or perform some more advanced feature. For example, swapping from a single column layout to a two-column layout on a desktop.
-##### Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow.
+##### I used flex to move the “go to map” button from vertical alignment with the logo, to horizontal alignment with the logo once the page is expanded. 
+
+##### I used Javascript to create a back and forth motion on the sign in panel. I also used javascript to prompt messages to the user for email confirmation, and a password length alert. 
+
+### Map Page
+
+##### On this page, there are several icons indicating the location of trails I like to frequent at the Red River Gorge. If you click on the tent icon, a pop up window will appear with the name of the trail and a link to that trail on the website “ALlTrails”.
+
+##### On this page, there are several icons indicating the location of trails I like to frequent at the Red River Gorge. If you click on the tent icon, a pop up window will appear with the name of the trail and a link to that trail on the website “ALlTrails”.
+
+##### This was also made with a mobile first design with media queries. At the bottom of the page there is a trail list. When you put the mouse over the list, it will go up the page, and you can highlight and see what trails the icons represent. I used nth-child to make every other green circle in the list the color red. 
+
+##### When the page is expanded the trail list moves to the far top right of the map, and the logo also gets progressively larger to fit the new screen size. 
+
+
 
 
 
